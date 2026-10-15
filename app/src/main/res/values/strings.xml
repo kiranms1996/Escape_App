@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Escape Security</string>
+    <string name="service_name">Escape Security · app detection</string>
+    <string name="service_description">Detects package changes to show identity verification for apps you select. Uses only window-change package names, never screen content, typing, gestures, or usage history. Best-effort protection: app content may appear before verification. You can disable this service at any time.</string>
+    <style name="Theme.Escape" parent="android:style/Theme.Material.Light.NoActionBar">
+        <item name="android:fontFamily">sans</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="android:windowActionModeOverlay">true</item>
+        <item name="android:colorAccent">#80CBC4</item>
+        <item name="android:windowBackground">#101418</item>
+    </style>
+</resources>

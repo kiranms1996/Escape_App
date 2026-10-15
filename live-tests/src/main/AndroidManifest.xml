@@ -1,0 +1,11 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+    <queries>
+        <package android:name="com.escape.security" />
+        <package android:name="com.google.android.deskclock" />
+        <intent>
+            <action android:name="android.intent.action.MAIN" />
+            <category android:name="android.intent.category.HOME" />
+        </intent>
+    </queries>
+    <application android:label="Escape emulator test harness" android:allowBackup="false" />
+</manifest>

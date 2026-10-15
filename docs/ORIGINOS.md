@@ -1,0 +1,15 @@
+# OriginOS / Vivo X300 Pro troubleshooting
+
+The exact firmware, region, and OriginOS version of the user's phone were not available. No device-specific background/autostart menu path has been verified on this physical phone. Do not treat Funtouch OS instructions as verified OriginOS instructions.
+
+Research found [vivo's official X300 Pro product page](https://www.vivo.com/in/products/x300-pro), [vivo Support](https://www.vivo.com/in/support), and [vivo's support battery FAQ index](https://www.vivo.com/en/support/questionList?categoryId=54716). These do not establish an exact, build-specific X300 Pro route for allowing this accessibility service to remain active. Community forum battery advice is insufficient to certify that route. The UI deliberately supplies standard Android intent links and no invented OEM component names or paths.
+
+1. Open Escape and authenticate. In Status, record manufacturer/model, Android API, and firmware. Check consent, enabled service toggle, connection, authenticator readiness, and any launch warning.
+2. If consent was withdrawn, review the disclosure again. Enable the service explicitly through Android Accessibility settings. If enabled but disconnected, toggle it off/on manually and reopen Escape. Do not assume Android's enabled-services list proves the process is connected.
+3. Open Escape's **app info** using Status. Review only the battery/background/startup options actually present on this firmware. Search the phone's Settings for background power, battery optimization, and startup. Ask vivo Support for instructions using the exact firmware and region. This document cannot certify option names or paths for your build.
+4. The Android battery-optimization page is a standard system action, not a promise that OriginOS has no additional controls. The app does not request direct exemption or secretly modify power settings. A listed exemption does not guarantee service survival.
+5. If Android blocks accessibility for this sideload, read its warning and [restricted-settings explanation](https://support.google.com/android/answer/12623953). Continue only with your own trusted build and controls offered by the firmware; the app cannot enable restricted access itself.
+6. Test immediately, after 30 minutes idle, overnight, after reboot, under battery saver, and after clearing recent apps. Revisit Status when detection stops. If the service or verification launch is repeatedly suppressed, regard the prototype as unreliable on that configuration.
+7. A background start can be silently blocked. The dashboard's visibility watchdog reports a suspected failure, while Android 16 StrictMode / ActivityTaskManager Logcat can help identify it. Do not upload logs without reviewing package/task details.
+
+Force-stop, uninstall, safe mode, or disabled accessibility removes this protection. There is no hidden restart mechanism or protection against those actions. For recovery, Android Settings and Home are excluded from the app picker. A missing allowed authenticator requires restoring phone security/enrollment or waiting out an Android lockout. Clearing data/uninstalling removes all selections and consent.
